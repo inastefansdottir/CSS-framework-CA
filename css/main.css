@@ -11577,6 +11577,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Encode Sans", ui-sans-serif, system-ui;
   background-color: #e5e1f2;
@@ -11594,13 +11600,19 @@ body {
 
 .form-control {
   border: 2px solid #5f5aa5;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 10px 14px;
   font-size: 0.9rem;
 }
 .form-control:focus {
   border-color: #a796e3;
   box-shadow: 0 0 0 0.2rem rgba(95, 90, 165, 0.25);
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 0 20px;
+  font-weight: 700;
 }
 
 .btn-login {
@@ -11642,6 +11654,58 @@ body {
 
 .placeholder-text-color::placeholder {
   color: #a796e3;
+}
+
+/* feed page */
+@media (min-width: 1000px) {
+  .main-container {
+    max-width: 932px;
+    margin: 0 auto;
+  }
+}
+.fa-bars {
+  color: #5f5aa5 !important;
+  font-size: 30px;
+}
+
+.navbar-toggler {
+  padding: 0;
+}
+
+.btn-accent {
+  background-color: #6da90f;
+  color: white;
+}
+.btn-accent:hover {
+  background-color: rgb(78.7880434783, 122.1576086957, 10.8423913043);
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.post-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+}
+
+.text-hover:hover {
+  color: #6da90f !important;
+}
+
+.fa-comment,
+.fa-share-square {
+  font-size: 22px;
+  color: #5f5aa5;
+}
+
+.sort {
+  height: 45px;
 }
 
 /*# sourceMappingURL=main.css.map */

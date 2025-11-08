@@ -11708,4 +11708,21 @@ img.rounded-circle {
   height: 45px;
 }
 
+/* Profile page */
+.btn-outline-primary {
+  outline: 1px solid #5f5aa5;
+  padding: 5px 10px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #5f5aa5;
+  color: #e5e1f2;
+}
+
+.profile-gallery img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=main.css.map */

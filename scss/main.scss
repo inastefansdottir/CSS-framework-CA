@@ -141,3 +141,20 @@ img.rounded-circle {
 .sort {
   height: 45px;
 }
+
+/* Profile page */
+.btn-outline-primary {
+  outline: 1px solid $primary-dark;
+  padding: 5px 10px;
+}
+
+.btn-outline-primary:hover {
+  background-color: $primary-dark;
+  color: $primary-light;
+}
+
+.profile-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}

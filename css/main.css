@@ -11588,6 +11588,10 @@ body {
   background-color: #e5e1f2;
 }
 
+main {
+  margin-top: 100px !important;
+}
+
 .login-card {
   background-color: white;
   max-width: 360px;

@@ -14,6 +14,10 @@ body {
   background-color: $primary-light;
 }
 
+main {
+  margin-top: 100px !important;
+}
+
 .login-card {
   background-color: white;
   max-width: 360px;

@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Petify | Log In</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body class="bg-primary-light d-flex align-items-center justify-content-center vh-100">
-
+  <body
+    class="bg-primary-light d-flex align-items-center justify-content-center vh-100"
+  >
     <div class="login-card text-center rounded-4 shadow p-4">
-        <img src="images/petify-logo-dark.svg" alt="Petify logo" class="logo mb-3 w-50">
-        <p class="text-primary small mb-4">Connect with pet lovers, share your furry friend's moments, and discover a
-            community made just for pets and their humans.</p>
+      <img
+        src="images/petify-logo-dark.svg"
+        alt="Petify logo"
+        class="logo mb-3 w-50"
+      />
+      <p class="text-primary small mb-4">
+        Connect with pet lovers, share your furry friend's moments, and discover
+        a community made just for pets and their humans.
+      </p>
 
-        <h1 class="fs-4 fw-black text-primary mb-3">LOG IN</h1>
-        <form action="./feed/index.html" method="get">
-            <div class="mb-3">
-                <label for="email" class="visually-hidden">Email</label>
-                <input type="email" class="placeholder-text-color form-control" placeholder="Email" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="visually-hidden">Password</label>
-                <input type="password" class="placeholder-text-color form-control" placeholder="Password" minlength="8"
-                    required>
-            </div>
-            <button type="submit" class="btn w-100 btn-login">Log in</button>
-        </form>
+      <h1 class="fs-4 fw-black text-primary mb-3">LOG IN</h1>
+      <form action="./feed/index.html" method="get">
+        <div class="mb-3">
+          <label for="email" class="visually-hidden">Email</label>
+          <input
+            type="email"
+            class="placeholder-text-color form-control"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="visually-hidden">Password</label>
+          <input
+            type="password"
+            class="placeholder-text-color form-control"
+            placeholder="Password"
+            minlength="8"
+            required
+          />
+        </div>
+        <button type="submit" class="btn w-100 btn-login">Log in</button>
+      </form>
 
-        <div class="divider my-3">OR</div>
-        <p class="mb-0 small text-secondary">Don’t have an account?
-            <a href="#" class="text-accent fw-bold text-decoration-none">Sign up</a>
-        </p>
+      <div class="divider my-3">OR</div>
+      <p class="mb-0 small text-secondary">
+        Don’t have an account?
+        <a href="#" class="text-accent fw-bold text-decoration-none">Sign up</a>
+      </p>
     </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>

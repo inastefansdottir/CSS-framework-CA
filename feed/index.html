@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petify | Feed</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-primary-light">
+    <!-- Navbar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary-light shadow-sm"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="../feed/index.html">
+            <img
+              src="../images/petify-cat-dark.svg"
+              alt="Petify logo"
+              height="40"
+              class="me-1"
+            />
+            <img
+              src="../images/petify-logo-text.svg"
+              alt="Petify logo"
+              height="35"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-primary" href="#">Feed</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold text-secondary text-hover"
+                  aria-current="page"
+                  href="../profile/index.html"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-secondary text-hover" href="../"
+                  >Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Feed-->
+    <main class="container main-container">
+      <!-- New Post Form -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <form class="d-flex">
+            <div class="me-3 w-100">
+              <input
+                class="form-control text-primary placeholder-text-color"
+                placeholder="Share something about your pet..."
+              />
+            </div>
+            <button type="submit" class="btn btn-accent">Post</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Search and Sort Bar -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <!-- Search -->
+        <div class="position-relative w-50">
+          <input
+            type="text"
+            class="form-control rounded-pill ps-3 pe-5 text-primary placeholder-text-color"
+            placeholder="Search posts or users..."
+          />
+          <i
+            class="fa-solid fa-magnifying-glass text-primary position-absolute top-50 end-0 translate-middle-y me-3"
+          ></i>
+        </div>
+
+        <!-- Sort -->
+        <div>
+          <select
+            class="form-select w-auto text-primary rounded-pill sort ps-3"
+          >
+            <option selected>Sort by</option>
+            <option value="latest">Latest</option>
+            <option value="popular">Most Liked</option>
+            <option value="comments">Most Commented</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Posts List -->
+      <div id="posts-list">
+        <!-- Example Post -->
+        <article class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/placeholder-profile-image.png"
+                alt="profile picture"
+                class="rounded-circle me-2"
+                width="40"
+                height="40"
+              />
+              <a href="#" class="fw-bold text-decoration-none text-primary"
+                >Username</a
+              >
+            </div>
+            <img
+              src="../images/default-image.png"
+              alt="post image"
+              class="img-fluid rounded mb-3"
+            />
+            <div class="d-flex align-items-center">
+              <button type="button" class="border-0 bg-white me-2">
+                <img
+                  class="pr-0"
+                  src="../images/paw-print-unclicked.svg"
+                  alt="Like"
+                  width="25"
+                />
+              </button>
+              <span class="me-3 text-primary">5</span>
+              <i class="far fa-comment me-2" style="cursor: pointer"></i>
+              <span class="text-primary">2</span>
+              <div class="ms-auto">
+                <i class="far fa-share-square" style="cursor: pointer"></i>
+              </div>
+            </div>
+            <p class="mt-4 text-primary">
+              <span class="fw-bold">Username:</span> This is a sample post
+              description about my pet.
+            </p>
+          </div>
+        </article>
+
+        <article class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/oreo-profile.jpg"
+                alt="profile picture"
+                class="rounded-circle me-2"
+                width="40"
+                height="40"
+              />
+              <a href="#" class="fw-bold text-decoration-none text-primary"
+                >Oreo</a
+              >
+            </div>
+            <img
+              src="../images/oreo-post.jpg"
+              alt="post image"
+              class="img-fluid rounded mb-3 post-image"
+            />
+            <div class="d-flex align-items-center">
+              <button type="button" class="border-0 bg-white me-2">
+                <img
+                  class="pr-0"
+                  src="../images/paw-print-unclicked.svg"
+                  alt="Like"
+                  width="25"
+                />
+              </button>
+              <span class="me-3 text-primary">5</span>
+              <i class="far fa-comment me-2" style="cursor: pointer"></i>
+              <span class="text-primary">2</span>
+              <div class="ms-auto">
+                <i class="far fa-share-square" style="cursor: pointer"></i>
+              </div>
+            </div>
+            <p class="mt-4 text-primary">
+              <span class="fw-bold">Oreo:</span> Love the sunset
+            </p>
+          </div>
+        </article>
+
+        <article class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/miyana-profile.jpg"
+                alt="profile picture"
+                class="rounded-circle me-2"
+                width="40"
+                height="40"
+              />
+              <a href="#" class="fw-bold text-decoration-none text-primary"
+                >Miyana</a
+              >
+            </div>
+            <img
+              src="../images/miyana-post.jpg"
+              alt="post image"
+              class="img-fluid rounded mb-3 post-image"
+            />
+            <div class="d-flex align-items-center">
+              <button type="button" class="border-0 bg-white me-2">
+                <img
+                  class="pr-0"
+                  src="../images/paw-print-unclicked.svg"
+                  alt="Like"
+                  width="25"
+                />
+              </button>
+              <span class="me-3 text-primary">5</span>
+              <i class="far fa-comment me-2" style="cursor: pointer"></i>
+              <span class="text-primary">2</span>
+              <div class="ms-auto">
+                <i class="far fa-share-square" style="cursor: pointer"></i>
+              </div>
+            </div>
+            <p class="mt-4 text-primary">
+              <span class="fw-bold">Miyana:</span> Im falling!
+            </p>
+          </div>
+        </article>
+
+        <article class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/flora-profile.jpg"
+                alt="profile picture"
+                class="rounded-circle me-2"
+                width="40"
+                height="40"
+              />
+              <a href="#" class="fw-bold text-decoration-none text-primary"
+                >Flora</a
+              >
+            </div>
+            <img
+              src="../images/flora-post.jpg"
+              alt="post image"
+              class="img-fluid rounded mb-3 post-image"
+            />
+            <div class="d-flex align-items-center">
+              <button type="button" class="border-0 bg-white me-2">
+                <img
+                  class="pr-0"
+                  src="../images/paw-print-unclicked.svg"
+                  alt="Like"
+                  width="25"
+                />
+              </button>
+              <span class="me-3 text-primary">5</span>
+              <i class="far fa-comment me-2" style="cursor: pointer"></i>
+              <span class="text-primary">2</span>
+              <div class="ms-auto">
+                <i class="far fa-share-square" style="cursor: pointer"></i>
+              </div>
+            </div>
+            <p class="mt-4 text-primary">
+              <span class="fw-bold">Flora:</span> zzZZ
+            </p>
+          </div>
+        </article>
+
+        <article class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/eirik-profile.jpg"
+                alt="profile picture"
+                class="rounded-circle me-2"
+                width="40"
+                height="40"
+              />
+              <a href="#" class="fw-bold text-decoration-none text-primary"
+                >Eirik</a
+              >
+            </div>
+            <img
+              src="../images/eirik-post.jpg"
+              alt="post image"
+              class="img-fluid rounded mb-3 post-image"
+            />
+            <div class="d-flex align-items-center">
+              <button type="button" class="border-0 bg-white me-2">
+                <img
+                  class="pr-0"
+                  src="../images/paw-print-unclicked.svg"
+                  alt="Like"
+                  width="25"
+                />
+              </button>
+              <span class="me-3 text-primary">5</span>
+              <i class="far fa-comment me-2" style="cursor: pointer"></i>
+              <span class="text-primary">2</span>
+              <div class="ms-auto">
+                <i class="far fa-share-square" style="cursor: pointer"></i>
+              </div>
+            </div>
+            <p class="mt-4 text-primary">
+              <span class="fw-bold">Eirik:</span> HEYYYYY
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

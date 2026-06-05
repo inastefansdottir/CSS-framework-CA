@@ -1,0 +1,17 @@
+// Custom color palette
+$primary-light: #e5e1f2;
+$primary-dark: #5f5aa5;
+$secondary-light: #baaceb;
+$secondary-dark: #a796e3;
+$accent: #6da90f;
+
+// Override Bootstrap color map
+$theme-colors: (
+  "primary": $primary-dark,
+  "secondary": $secondary-dark,
+  "primary-light": $primary-light,
+  "secondary-light": $secondary-light,
+  "accent": $accent
+);
+
+$font-family-base: "Encode Sans", ui-sans-serif, system-ui;

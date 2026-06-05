@@ -1,0 +1,164 @@
+@import "variables";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom styling
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  background-color: $primary-light;
+}
+
+main {
+  margin-top: 100px !important;
+}
+
+.login-card {
+  background-color: white;
+  max-width: 360px;
+  width: 90%;
+}
+
+.logo {
+  width: 70px;
+}
+
+.form-control {
+  border: 2px solid $primary-dark;
+  border-radius: 30px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+
+  &:focus {
+    border-color: $secondary-dark;
+    box-shadow: 0 0 0 0.2rem rgba($primary-dark, 0.25);
+  }
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 0 20px;
+  font-weight: 700;
+}
+
+.btn-login {
+  background-color: $primary-dark;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 0;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $secondary-dark;
+    color: white;
+  }
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  color: $secondary-dark;
+  font-size: 0.8rem;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: $secondary-dark;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.placeholder-text-color::placeholder {
+  color: $secondary-dark;
+}
+
+/* feed page */
+@media (min-width: 1000px) {
+  .main-container {
+    max-width: 932px;
+    margin: 0 auto;
+  }
+}
+
+.fa-bars {
+  color: $primary-dark !important;
+  font-size: 30px;
+}
+
+.navbar-toggler {
+  padding: 0;
+}
+
+.btn-accent {
+  background-color: $accent;
+  color: white;
+
+  &:hover {
+    background-color: darken($accent, 10%);
+  }
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.post-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+}
+
+.text-hover:hover {
+  color: $accent !important;
+}
+
+.fa-comment,
+.fa-share-square {
+  font-size: 22px;
+  color: $primary-dark;
+}
+
+.sort {
+  height: 45px;
+}
+
+/* Profile page */
+.btn-outline-primary {
+  outline: 1px solid $primary-dark;
+  padding: 5px 10px;
+}
+
+.btn-outline-primary:hover {
+  background-color: $primary-dark;
+  color: $primary-light;
+}
+
+.profile-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}

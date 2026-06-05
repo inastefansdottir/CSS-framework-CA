@@ -56,7 +56,7 @@ This website focuses purely on UI and layout, no JavaScript or backend functiona
 - [Font Awesome]([https://ionic.io/ionicons](https://fontawesome.com/)) used throughout the app
 
 ## Tech Stack  
-- **Bootstrap 5** (installed via npm)
+- **Bootstrap 5** loaded via CDN
 - **Sass** (compiled via npm scripts)
 - **HTML5 & CSS3** 
 - **Font Awesome 6**
@@ -81,11 +81,13 @@ To get a local copy of this project up and running:
    ```bash
    npm install
 
-3. Start the development server:
+3. Start Sass watch mode:
    ```bash
    npm run dev
+   ```
+   This watches `scss/main.scss` and compiles changes to `css/main.css`.
 
-4. Open the app in your browser:
+4. Open the app in your browser with live server:
    ```bash
    http://localhost:3000
 
